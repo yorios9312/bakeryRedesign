@@ -1,0 +1,317 @@
+/* Background image */
+body {
+  /* Image thanks to Creative Commons. Taken by Juanedc. Image link: https://flic.kr/p/dy28Dy */
+  background: url(../images/background.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* Space out content a bit */
+body {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-family: 'Norican', cursive;
+}
+
+/* Remove location button and map when media size is smaller */
+#locButton {
+  display: none;
+}
+#map-canvas {
+  display: none;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* Custom page header */
+.header {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e5e5e5;
+}
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+}
+
+/* Random custom size fixes for headers and images*/
+.hours h1 {
+  font-size: 3.25em;
+  text-align: center;
+}
+.hours {
+  width: 70%;
+  margin: 0 auto;
+}
+.hours th, td {
+  text-align: center;
+  font-family: 'Arimo', sans-serif;
+  font-size: 1.2em;
+}
+h4 {
+  font-size: 1.6em;
+  text-align: center;
+}
+#bakery {
+  width: 60%;
+  text-align: center;
+}
+#menuPic {
+  width: 60%;
+  text-align: center;
+}
+#bakery2, #bakery3, #bakery4 {
+  width: 60%;
+  margin:0 auto;
+  max-width:100%;
+}
+.glyphicon {
+  font-size: 5em;
+  color: #454544;
+  text-decoration: none;
+}
+.glyphicon:hover {
+  color: #9AAB63;
+  text-decoration: none;
+}
+.glyphicon:link:hover {
+  color: #9AAB63;
+  text-decoration: none;
+}
+.glyphicon:visited {
+  color: #454544;
+  text-decoration: none;
+}
+.glyphicon:active {
+  color: #454544;
+  text-decoration: none;
+}
+.glyphicon:link {
+  color: #454544;
+  text-decoration: none;
+}
+.contactInfo {
+  text-align: center;
+}
+.contactIcons {
+  text-align: center;
+  text-decoration: none;
+}
+#locButton {
+  background-color: #9AAB63;
+  border-color: black;
+}
+#locButton:hover {
+  background-color: #637243;
+  border-color: black;
+}
+#aboutVid {
+  text-align: center;
+  width: 70%;
+  margin: 0 auto;
+}
+#map-canvas {
+  width: 500px;
+  height: 400px;
+  background-color: #CCC;
+  margin: 0 auto;
+}
+.marketing h2, p {
+  text-align: center;
+}
+.menuButton {
+  background-color: #9AAB63;
+  border-color: black;
+  font-size: .75em;
+  font-family: 'Arimo', sans-serif;
+}
+.menuButton:hover {
+  background-color: #637243;
+  border-color: black;
+}
+.hiddenQuery p, h4{
+  display: none;
+}
+.item {
+  width: 70%;
+}
+
+/* Navigation CSS */
+li {
+  font-size: 1.6em;
+}
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  padding-right: 30px;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
+/* Paragraph CSS */
+p {
+  font-family: 'Arimo', sans-serif;
+}
+
+.container {
+  background-color: white;
+  opacity: .9;
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+#footerLeft {
+  float: left;
+}
+#yelp {
+  float: right;
+  width: 20%;
+
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  transition: all .5s ease;
+}
+#yelp:hover {
+  width: 22%;
+}
+
+/* Customize container */
+@media (min-width: 768px) {
+  .container {
+    max-width: 850px;
+  }
+}
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  padding-top: 20px;
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+.jumbotron h1 {
+  font-size: 3.25em;
+}
+.jumbotron .btn {
+  padding: 14px 24px;
+  font-size: 21px;
+}
+.jumbotron .lead {
+  font-size: 1.2em;
+  text-align: justify;
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+}
+.marketing p + h4 {
+  margin-top: 28px;
+}
+
+.hiddenQuery br{
+  display: none;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+  /* Bring back location button and map when media size is bigger */
+  #locButton {
+    display: inline;
+  }
+  #map-canvas {
+    display: inherit;
+  }
+  #bakery2, #bakery3, #bakery4 {
+    width: 100%;
+  }
+  .food {
+    width: 30%;
+  }
+  .breakfast {
+    width: 70%;
+  }
+}
+
+.cd-top {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  position: fixed;
+  bottom: 40px;
+  right: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  /* image replacement properties */
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  background: #363634 url(../js/back-to-top/img/cd-top-arrow.svg) no-repeat center 50%;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity .3s 0s, visibility 0s .3s;
+  -moz-transition: opacity .3s 0s, visibility 0s .3s;
+  transition: opacity .3s 0s, visibility 0s .3s;
+}
+.cd-top.cd-is-visible, .cd-top.cd-fade-out, .no-touch .cd-top:hover {
+  -webkit-transition: opacity .3s 0s, visibility 0s 0s;
+  -moz-transition: opacity .3s 0s, visibility 0s 0s;
+  transition: opacity .3s 0s, visibility 0s 0s;
+}
+.cd-top.cd-is-visible {
+  /* the button becomes visible */
+  visibility: visible;
+  opacity: 1;
+}
+.no-touch .cd-top:hover {
+  background-color: #1E1E1C;
+  opacity: 1;
+}
+@media only screen and (min-width: 768px) {
+  .cd-top {
+    right: 20px;
+    bottom: 20px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .cd-top {
+    height: 60px;
+    width: 60px;
+    right: 30px;
+    bottom: 30px;
+  }
+}

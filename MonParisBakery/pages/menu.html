@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Mon Paris Bakery</title>
+    <link rel="icon" href="../../favicon.ico">
+
+    <link href='http://fonts.googleapis.com/css?family=Arimo|Lobster+Two:400,700|Norican' rel='stylesheet' type='text/css'>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../css/styles.css" rel="stylesheet">
+
+    <!-- The following lines are for the icon that appears in the tab with the title of the site -->
+    <link rel="apple-touch-icon" sizes="57x57" href="../assets.ico/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../assets.ico/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../assets.ico/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../assets.ico/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../assets.ico/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../assets.ico/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../assets.ico/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../assets.ico/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets.ico/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="../assets.ico/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets.ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../assets.ico/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets.ico/favicon-16x16.png">
+    <link rel="manifest" href="../assets.ico/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="../assets.ico/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <!-- Bootstrap styles and jquery plugin -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="../js/back-to-top/js/modernizr.js"></script>
+
+    <script>
+    $(document).ready(function(){
+        $("#menuClick").click(function(){
+            $(".hiddenQuery p").slideToggle();
+            $(".hiddenQuery br").slideToggle();
+            $("h4").slideToggle(400, function(){
+              if($(this).is(':visible')){
+                  $('#menuClick').html('Hide Menu Options');
+              } else{
+                  $('#menuClick').html('Show Full Menu');
+              }
+          });
+      });
+    });
+    </script>
+  </head>
+
+  <body>
+
+    <div class="container">
+      <div class="header clearfix">
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>                        
+            </button>
+          </div>
+
+        <!--
+          _   _             _             _   _             
+         | \ | | __ ___   _(_) __ _  __ _| |_(_) ___  _ __  
+         |  \| |/ _` \ \ / / |/ _` |/ _` | __| |/ _ \| '_ \ 
+         | |\  | (_| |\ V /| | (_| | (_| | |_| | (_) | | | |
+         |_| \_|\__,_| \_/ |_|\__, |\__,_|\__|_|\___/|_| |_|
+                              |___/   
+
+          Edit this section by adding more li tags just like the ones below
+
+        --> 
+
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="../index.html">Home</a></li>
+              <li class="active"><a href="menu.html">Menu</a></li>
+              <li><a href="about.html">About</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <div class="jumbotron">
+        <h1>Menu</h1>
+        <br>
+        <p><img id="menuPic" class="img-rounded" src="../images/menu.png" alt="pastries"></p><br>
+        <p><a class="btn btn-lg btn-success menuButton" id="menuClick" role="button">Show Full Menu</a></p>
+      </div>
+
+      <!--
+          __  __                  
+         |  \/  | ___ _ __  _   _ 
+         | |\/| |/ _ \ '_ \| | | |
+         | |  | |  __/ | | | |_| |
+         |_|  |_|\___|_| |_|\__,_|
+                                                  
+          Edit the menu by changing the contents within the p tags
+      -->  
+
+    <div class="hiddenQuery">
+      <div class="row marketing">
+        <div class="col-lg-1"></div>
+
+        <div class="col-lg-5">
+          <h2>Coffee</h2>
+          <p>Espresso Single: $2.25</p>
+          <p>Espresso Double: $2.95</p>
+          <p>Americano: $2.50</p>
+          <p>Cappucino/Latte: $2.50</p>
+          <p>Flavored: additional .50</p>
+          <p>Regular: $1.99</p>
+          <p>Hot Tea: $1.99</p>
+          <p>Au Lait: $2.50</p>
+          <p>Iced Coffee: $2.25</p>
+          <p>Chai Latte: $3.25</p>
+
+          <h2>Smoothie</h2>
+          <p>Strawberry: $6.50</p>
+          <p>Strawberry w/ Banana: $6.75</p>
+          <p>Mixed Wild Berries: $6.50</p>
+
+          <h2>Soft Drinks</h2>
+          <p>Soda: $1.25</p>
+          <p>Water: $1.00</p>
+          <p>Coconut Water: $2.00</p>
+          <p>Vitamin Water: $1.75</p>
+          <p>Bottled Iced Tea: $1.75</p>
+          <p>Perrier: $2.25</p>
+          <p>Orange Juice: $1.50</p>
+          <p>Apple Juice: $1.50</p><br><br><br>
+
+          <p><img class="img-rounded item" src="../images/baked1.png" alt="pastries"></p><br>
+          <p><img class="img-rounded item" src="../images/baked2.png" alt="pastries"></p><br>
+          <p><img class="img-rounded item" src="../images/baked3.png" alt="pastries"></p><br>
+          <p><img class="img-rounded item" src="../images/baked5.png" alt="pastries"></p><br>
+          <p><img class="img-rounded item" src="../images/baked6.png" alt="pastries"></p><br>
+        </div>
+
+        <div class="col-lg-5">
+          <h2>Baked Goods</h2>
+          <p>Plain Croissant: $2.25</p>
+          <p>Chocolate Croissant: $2.95</p>
+          <p>Almond Croissant: $3.45</p>
+          <p>White Chocolate Brioche: $6.00</p>
+          <p>Cheese Danish: $2.95</p>
+          <p>Raisin Danish: $2.95</p>
+          <p>Apricot Danish: $3.25</p>
+          <p>Assorted Strudel: $3.50</p>
+          <p>Assorted Pastries: $4.00</p>
+          <p>Cookies: $6.00/8oz</p>
+          <p>Tarte/Various 7"/10": $14.95/$22.00</p>
+          <p>Ham & Swiss Cheese Croissant: $4.50</p>
+          <p>Spanish & Goat Cheese Croissant: $4.50</p>
+
+          <h2>Bread</h2>
+          <p>Baguette (Short or Long): $2.25</p>
+          <p>Double Baguette: $4.25</p>
+          <p>Ciabatta: $1.25</p>
+          <p>Michette: $3.00</p>
+          <p>Bagel (various): $1.10</p>
+          <p><img class="img-rounded item" src="../images/bread1.png" alt="bread"></p><br>
+          <p><img class="img-rounded item" src="../images/bread2.png" alt="bread"></p><br>
+          <p><img class="img-rounded item" src="../images/bread3.png" alt="bread"></p><br>
+
+          <h2>Breakfast Sandwiches</h2>
+          <p>Bagel w/Butter: $1.95</p>
+          <p>Bagel w/Peanut Butter: $2.25</p>
+          <p>Bagel w/Cream Cheese: $2.45</p>
+          <p>Bagel w/Two Eggs & Cheese: $3.25</p>
+          <p>Bagel w/Ham & Cheese: $3.75</p>
+          <p>Bagel w/Ham, Egg & Cheese: $4.75</p>
+          <p>Bagel w/Nova Lox & Cream Cheese: $8.95</p>
+          <p>Two Egg Omelet w/Ham, Bacon, or Turkey & Swiss on Croissant: $5.95</p>
+          <p>European Salami Sandwich w/Butter: $6.95</p>
+          <p>Ham & Cheese Croissant: $4.50</p>
+          <p>Spinach & Goat Croissant: $4.50</p>
+          <p><img class="img-rounded item breakfast" src="../images/breakfast.png" alt="croissant"></p>
+        </div>
+
+        <div class="col-lg-1"></div>
+
+        <div class="col-lg-12">
+          <h2>Lunch with Small Organic Salad Garnish</h2>
+          <p>Quiche-Ham & Cheese: $7.95</p>
+          <p>Quiche-Goat Cheese & Spinach: $7.95</p>
+          <p>Ham/Turkey/Chicken w-Swiss: $7.95</p>
+          <p>Croq-Monsieur Ham or Turkey: $7.95</p>
+
+          <h4>Panini</h4>
+          <p>Ham/Turkey/Chicken & Swiss: $7.95</p>
+          <p>Tomato & Mozzarella: $7.50</p>
+
+          <h4>Deli Sandwich</h4> 
+          <p><strong>(on croissant, baguette, ciabatta with homemade pesto sauce)</strong></p>
+          <p>Ham/Turkey/Chicken & Swiss: $7.95</p>
+          <p>Chicken Salad: $7.95</p>
+          <p>Tomato & Mozzarella: $7.50</p>
+          <p>Tomato & Brie: $7.50</p>
+          <p><img class="img-rounded item food" src="../images/lunch.png" alt="sandwich"></p>
+
+          <h2>French Toast</h2>
+          <p>White Chocolate Brioche French Toast with Whipped Crème: $6.50</p>
+
+          <h2>French Crepes</h2>
+          <p>w- Nova Lox Crème Cheese Onions Capers: $8.90</p>
+          <p>w- Eggs Ham or Turkey and Swiss Cheese: $7.50</p>
+          <p>w- Nutella and Whipped Crème: $6.50</p>
+          <p>w- Organic Strawberry or Mixed Berries Preserves & Whipped Crème: $6.50</p>
+          <p><img class="img-rounded item food" src="../images/crepe.png" alt="crepe"></p><br>
+      
+          <div class="col-lg-12">
+            <h2>Special Order - Artistic French Breads</h2>
+            <p>$15.00 each</p>
+          </div>
+          <div class="col-lg-4">
+            <p>Alligator</p>
+            <p><img class="img-rounded item" src="../images/alligator.png" alt="alligator"></p><br>
+          </div>
+
+          <div class="col-lg-4">
+            <p>Crab</p>
+            <p><img class="img-rounded item" src="../images/crab.png" alt="crab"></p><br>
+          </div>
+
+          <div class="col-lg-4">
+            <p>Sea Turtle</p>
+            <p><img class="img-rounded item" src="../images/turtle.png" alt="turtle"></p><br>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <a href="#0" class="cd-top">Top</a>
+
+      <!--
+          _____           _            
+         |  ___|__   ___ | |_ ___ _ __ 
+         | |_ / _ \ / _ \| __/ _ \ '__|
+         |  _| (_) | (_) | ||  __/ |   
+         |_|  \___/ \___/ \__\___|_|   
+                               
+          Edit the footer by changing the information in the p tags. Do not remove my copyright, please!
+      -->  
+
+      <footer class="footer">
+        <div id="footerLeft">
+          <p>13550 Reflections Pkwy #4-401<br>Fort Myers, Florida 33907</p>
+          <p>239.437.1988</p>
+          <p>&copy; Manuela Rios 2015</p>
+        </div>
+        <a href="http://www.yelp.com/biz/mon-paris-coffee-shop-and-bakery-fort-myers" target="_blank">
+          <img id="yelp" href="http://www.yelp.com/biz/mon-paris-coffee-shop-and-bakery-fort-myers" src="../images/yelp.png" alt="yelp">
+        </a>
+      </footer>
+    </div> <!-- /container -->
+    <script src="../js/back-to-top/js/main.js"></script> <!-- Gem jQuery -->
+  </body>
+</html>
